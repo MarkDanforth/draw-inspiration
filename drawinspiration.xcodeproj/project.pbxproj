@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F531A3A91F3ED9E8008C14D2 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F531A3A81F3ED9E8008C14D2 /* Challenge.swift */; };
+		F531A3AB1F3EDD84008C14D2 /* GoDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F531A3AA1F3EDD84008C14D2 /* GoDrawViewController.swift */; };
+		F5461BDF1F41C811001E62D8 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BDE1F41C811001E62D8 /* ChallengeTableViewCell.swift */; };
+		F5461BE11F41CB91001E62D8 /* ChallengeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BE01F41CB91001E62D8 /* ChallengeTableViewController.swift */; };
+		F5D394D61F5D45C10073C510 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D394D51F5D45C10073C510 /* CoreData.framework */; };
+		F5D394D91F5D465C0073C510 /* ChallengeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D394D71F5D465C0073C510 /* ChallengeModel.xcdatamodeld */; };
+		F5D3950A1F5D5CBB0073C510 /* ChallengeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D395091F5D5CBB0073C510 /* ChallengeManager.swift */; };
 		F5F38ABE1F37117F005A083C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F38ABD1F37117F005A083C /* AppDelegate.swift */; };
 		F5F38AC01F37117F005A083C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F38ABF1F37117F005A083C /* ViewController.swift */; };
 		F5F38AC31F37117F005A083C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F38AC11F37117F005A083C /* Main.storyboard */; };
@@ -26,6 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F531A3A81F3ED9E8008C14D2 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		F531A3AA1F3EDD84008C14D2 /* GoDrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoDrawViewController.swift; sourceTree = "<group>"; };
+		F5461BDE1F41C811001E62D8 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeTableViewCell.swift; path = ../ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		F5461BE01F41CB91001E62D8 /* ChallengeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewController.swift; sourceTree = "<group>"; };
+		F5D394D51F5D45C10073C510 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F5D394D81F5D465C0073C510 /* ChallengeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChallengeModel.xcdatamodel; sourceTree = "<group>"; };
+		F5D395091F5D5CBB0073C510 /* ChallengeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeManager.swift; sourceTree = "<group>"; };
 		F5F38ABA1F37117F005A083C /* drawinspiration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawinspiration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F38ABD1F37117F005A083C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5F38ABF1F37117F005A083C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D394D61F5D45C10073C510 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +71,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5D394D41F5D45C10073C510 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D394D51F5D45C10073C510 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5F38AB11F37117F005A083C = {
 			isa = PBXGroup;
 			children = (
 				F5F38ABC1F37117F005A083C /* drawinspiration */,
 				F5F38AD11F37117F005A083C /* drawinspirationTests */,
 				F5F38ABB1F37117F005A083C /* Products */,
+				F5D394D41F5D45C10073C510 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +103,16 @@
 			children = (
 				F5F38ABD1F37117F005A083C /* AppDelegate.swift */,
 				F5F38ABF1F37117F005A083C /* ViewController.swift */,
+				F531A3AA1F3EDD84008C14D2 /* GoDrawViewController.swift */,
+				F531A3A81F3ED9E8008C14D2 /* Challenge.swift */,
+				F5461BDE1F41C811001E62D8 /* ChallengeTableViewCell.swift */,
+				F5461BE01F41CB91001E62D8 /* ChallengeTableViewController.swift */,
+				F5D395091F5D5CBB0073C510 /* ChallengeManager.swift */,
 				F5F38AC11F37117F005A083C /* Main.storyboard */,
 				F5F38AC41F37117F005A083C /* Assets.xcassets */,
 				F5F38AC61F37117F005A083C /* LaunchScreen.storyboard */,
 				F5F38AC91F37117F005A083C /* Info.plist */,
+				F5D394D71F5D465C0073C510 /* ChallengeModel.xcdatamodeld */,
 			);
 			path = drawinspiration;
 			sourceTree = "<group>";
@@ -146,6 +176,7 @@
 				TargetAttributes = {
 					F5F38AB91F37117F005A083C = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 87HK4MRLHV;
 						ProvisioningStyle = Automatic;
 					};
 					F5F38ACD1F37117F005A083C = {
@@ -199,8 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D394D91F5D465C0073C510 /* ChallengeModel.xcdatamodeld in Sources */,
+				F531A3AB1F3EDD84008C14D2 /* GoDrawViewController.swift in Sources */,
+				F5461BE11F41CB91001E62D8 /* ChallengeTableViewController.swift in Sources */,
 				F5F38AC01F37117F005A083C /* ViewController.swift in Sources */,
+				F531A3A91F3ED9E8008C14D2 /* Challenge.swift in Sources */,
 				F5F38ABE1F37117F005A083C /* AppDelegate.swift in Sources */,
+				F5461BDF1F41C811001E62D8 /* ChallengeTableViewCell.swift in Sources */,
+				F5D3950A1F5D5CBB0073C510 /* ChallengeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 87HK4MRLHV;
 				INFOPLIST_FILE = drawinspiration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cursedbanana.drawinspiration;
@@ -353,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 87HK4MRLHV;
 				INFOPLIST_FILE = drawinspiration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cursedbanana.drawinspiration;
@@ -408,6 +447,7 @@
 				F5F38AD91F37117F005A083C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5F38ADA1F37117F005A083C /* Build configuration list for PBXNativeTarget "drawinspirationTests" */ = {
 			isa = XCConfigurationList;
@@ -416,8 +456,22 @@
 				F5F38ADC1F37117F005A083C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5D394D71F5D465C0073C510 /* ChallengeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5D394D81F5D465C0073C510 /* ChallengeModel.xcdatamodel */,
+			);
+			currentVersion = F5D394D81F5D465C0073C510 /* ChallengeModel.xcdatamodel */;
+			path = ChallengeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F5F38AB21F37117F005A083C /* Project object */;
 }
